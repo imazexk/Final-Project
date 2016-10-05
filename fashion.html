@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion</title>
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" type="text/css" href="fashion.css">
+<link rel="stylesheet" type="text/css" href="social.css">
+<!--header-->
+<header>
+    
+
+
+<!--product-->
+
+               
+            <div class="">
+                <div class="bd">
+                    <div class="bn">
+                        <a href="about.html">Salma Tahir</a>
+                    </div>
+                    <p class="bs">Make-up Artist</p>
+                </div>
+            </div>
+
+<!--end product-->
+
+<!-- Navbar -->
+                <nav class="navbar">
+                    <ul class="menu" data-type="navbar">
+                        <li class="active">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                            
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+</header>
+<!--end header-->
+</div>
+
+
+    <!--CONTENT-->
+
+
+<body>
+
+<!-- video -->
+<div id="vid">
+<iframe width="800" height="400" src="https://www.youtube.com/embed/r9yVHYeg9xk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h1>Fashion Gallery</h1>
+<!-- Gallery -->
+       <div class="slide-container">
+
+<div class="mySlides fade">
+  
+  <img src="fashion/f1.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="fashion/f2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="fashion/f3.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="fashion/f4.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="fashion/f5.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+ 
+  <img src="fashion/f6.jpg" style="width:100%">
+  
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)"><</a>
+<a class="next" onclick="plusSlides(1)">></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br>
+<br>
+<br>
+
+        <!-- END Gallery  -->
+ <main>
+
+
+        
+</main>
+
+    <!--footer-->
+  <footer class="foot-d">
+
+      <div class="foot-l">
+
+        <div class="bn">
+                            <a href="about.html"><span>S</span>alma <span>T</span>ahir</a>
+                        </div>
+
+        <p class="foot-link">
+          <a class="btn1 btn-m1 btn11" href="home.html">Home</a>
+          
+          <a class="btn1 btn-m1 btn11" href="about.html">About</a>
+          
+          <a class="btn1 btn-m1 btn11" href="services.html">Services</a>
+          
+          <a class="btn1 btn-m1 btn11" href="gallery.html">Portfolio</a>
+          
+          <a class="btn1 btn-m1 btn11" href="contacts.html">Contact</a>
+        </p>
+
+        <p class="foot-cn btn1 btn-m1 btn11">Salmastudios &copy; 2016</p>
+      </div>
+
+      <div class="foot-c">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>2400 Wickham Ave</span> Bronx,New York</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>646 228 9999</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:Salmastudios@gmail.com">Salmastudios@Gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="foot-r">
+
+        <p class="foot-ca">
+    <span style="font-size: 40px;">Follow Me</span>
+          
+        </p>
+
+        <div class="social">
+            <ul class="social_icons text-center">
+              <li class="facebook"><a href="http://www.facebook.com">facebook</a></li>
+              <li class="twitter"><a href="http://www.twitter.com">twitter</a></li>
+             <li class="insta"><a href="http://www.instagram.com">insta</a></li>
+             <li class="youtube"><a href="http://www.youtube.com">youtube</a></li>
+            <li class="pin"><a href="http://www.pinrest.com">pintrest</a></li>
+         </ul>
+     </div>
+    </div>
+</div>
+
+
+    </footer>
+
+</main>
+</body>
+</html>

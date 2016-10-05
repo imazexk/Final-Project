@@ -1,0 +1,234 @@
+.foot-d{
+	background-color: pink;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.foot-d .foot-l,
+.foot-d .foot-c,
+.foot-d .foot-r{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.foot-d .foot-l{
+	width: 40%;
+}
+
+/* The company logo */
+
+.foot-d h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.foot-d h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.foot-d .foot-link{
+	color:  red;
+
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.foot-d .foot-link a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.foot-d .foot-cn{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	left: 50px;
+}
+
+/* Footer Center */
+
+.foot-d .foot-c{
+	width: 35%;
+}
+
+.foot-d .foot-c i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.foot-d .foot-c i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.foot-d .foot-c p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.foot-d .foot-c p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.foot-d .foot-c a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.foot-d .foot-r{
+	width: 20%;
+}
+
+.foot-d .foot-ca{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.foot-d .foot-ca span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.foot-d .foot-i{
+	margin-top: 25px;
+}
+
+.foot-d .foot-i a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/*media*/
+
+@media (max-width: 880px) {
+
+	.foot-d{
+		font: bold 14px sans-serif;
+	}
+
+	.foot-d.foot-l,
+	.foot-d .foot-c,
+	.foot-d .foot-r{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.foot-d .foot-c i{
+		margin-left: 0;
+	}
+
+}
+
+/*footer buttons*/
+
+.btn1 {
+  display: inline-block;
+ 
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.btn-m1 {
+  font-size: 20px;
+  padding: 4px 3px;
+
+ 
+  box-shadow: 0px 0px 0px 3px pink;
+}
+
+
+
+.btn11 {
+  position: relative;
+
+  background: pink;
+  color: red;
+}
+.btn11:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  -moz-transform: translate(-50.1%, -50%);
+  -ms-transform: translate(-50.1%, -50%);
+  -o-transform: translate(-50.1%, -50%);
+  -webkit-transform: translate(-50.1%, -50%);
+  transform: translate(-50.1%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.btn11:hover {
+  color: #ff7592;
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(2);
+}
+.btn11:hover:after {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  background: pink;
+}
